@@ -18,6 +18,8 @@ import com.Flipkart.Utility.ExcelDataConfig;
 import com.Flipkart.Utility.Helper;
 import com.Flipkart.Utility.PropFileReader;
 
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -36,15 +38,27 @@ public class FlipkartMobileStepDefinition {
 	
 	ExcelDataConfig Dataobj = new ExcelDataConfig("TestData\\DataSheet.xlsx");
 	
-	@Given("^user is on Flipkart home page$")
-	public void user_is_on_Flipkart_home_page() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
+	@Before
+	public void browserSetUp() {
 		
-		Properties properties = obj.getProperty();
 		System.setProperty("webdriver.chrome.driver", "Driver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	}
+	
+	@After
+	public void TearDown() {
+		driver.quit();
+	}
+	
+	
+	
+	@Given("^user is on Flipkart home page$")
+	public void user_is_on_Flipkart_home_page() throws Throwable {
+
+		Properties properties = obj.getProperty();
+		
 		
 		driver.get(properties.getProperty("browser.baseURL"));
 		PageFactory.initElements(driver, page);
@@ -129,7 +143,7 @@ public class FlipkartMobileStepDefinition {
 		  TotalPrice=page.TotalPrice.getText();
 		  System.out.println("Total price is: "+TotalPrice);
 		Assert.assertEquals(TotalPrice, priceofMobileinSearchPage);
-		helper.killBrowser(driver);
+		
 		}
 	
 }

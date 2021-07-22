@@ -18,6 +18,10 @@ formatter.feature({
     }
   ]
 });
+formatter.before({
+  "duration": 24815770800,
+  "status": "passed"
+});
 formatter.scenario({
   "line": 8,
   "name": "Validation of searched mobile price with the total price",
@@ -82,56 +86,60 @@ formatter.match({
   "location": "FlipkartMobileStepDefinition.user_is_on_Flipkart_home_page()"
 });
 formatter.result({
-  "duration": 15766235000,
+  "duration": 13152833400,
   "status": "passed"
 });
 formatter.match({
   "location": "FlipkartMobileStepDefinition.user_enter_search_criteria()"
 });
 formatter.result({
-  "duration": 503326900,
+  "duration": 1366810900,
   "status": "passed"
 });
 formatter.match({
   "location": "FlipkartMobileStepDefinition.user_click_on_search_button()"
 });
 formatter.result({
-  "duration": 98055400,
+  "duration": 141521200,
   "status": "passed"
 });
 formatter.match({
   "location": "FlipkartMobileStepDefinition.validate_mobile_search_screen_is_displayed()"
 });
 formatter.result({
-  "duration": 2307613200,
+  "duration": 2297933500,
   "status": "passed"
 });
 formatter.match({
   "location": "FlipkartMobileStepDefinition.capture_the_price_of_first_mobile()"
 });
 formatter.result({
-  "duration": 44657700,
+  "duration": 151424600,
   "status": "passed"
 });
 formatter.match({
   "location": "FlipkartMobileStepDefinition.click_on_the_first_mobile()"
 });
 formatter.result({
-  "duration": 244774000,
+  "duration": 1016209400,
   "status": "passed"
 });
 formatter.match({
   "location": "FlipkartMobileStepDefinition.Add_To_Cart()"
 });
 formatter.result({
-  "duration": 5117299300,
+  "duration": 19265123300,
   "status": "passed"
 });
 formatter.match({
   "location": "FlipkartMobileStepDefinition.Verify_Cart_price()"
 });
 formatter.result({
-  "duration": 2324615400,
+  "duration": 2650420500,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 1625905400,
   "status": "passed"
 });
 });

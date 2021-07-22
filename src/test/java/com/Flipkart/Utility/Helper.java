@@ -18,8 +18,6 @@ public class Helper {
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	
-	public void killBrowser(WebDriver driver) {
-		driver.quit();
-	}
+
 	
 }
