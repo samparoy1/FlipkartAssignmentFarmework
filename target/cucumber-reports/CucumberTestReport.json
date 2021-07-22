@@ -1,0 +1,142 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: Sampa Roy"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "line": 8,
+        "name": "Validation of searched mobile price with the total price",
+        "description": "",
+        "id": "mobile-price-validation;validation-of-searched-mobile-price-with-the-total-price",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15766235000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is on Flipkart home page",
+            "match": {
+              "location": "FlipkartMobileStepDefinition.user_is_on_Flipkart_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 503326900,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 10,
+                "value": "#   And user close the login pop up"
+              }
+            ],
+            "line": 11,
+            "name": "user enter search criteria",
+            "match": {
+              "location": "FlipkartMobileStepDefinition.user_enter_search_criteria()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 98055400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user click on search button",
+            "match": {
+              "location": "FlipkartMobileStepDefinition.user_click_on_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2307613200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "validate mobile search screen is displayed",
+            "match": {
+              "location": "FlipkartMobileStepDefinition.validate_mobile_search_screen_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 44657700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "capture the price of first mobile",
+            "match": {
+              "location": "FlipkartMobileStepDefinition.capture_the_price_of_first_mobile()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 244774000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "click on the first mobile",
+            "match": {
+              "location": "FlipkartMobileStepDefinition.click_on_the_first_mobile()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5117299300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user click on Add to cart option",
+            "match": {
+              "location": "FlipkartMobileStepDefinition.Add_To_Cart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2324615400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "verify the total price with the previous search page price",
+            "match": {
+              "location": "FlipkartMobileStepDefinition.Verify_Cart_price()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Mobile Price validation",
+    "description": "I want to use this template for my feature file",
+    "id": "mobile-price-validation",
+    "keyword": "Feature",
+    "uri": "FlipkartMobileSearchScenario.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@tag"
+      }
+    ]
+  }
+]
